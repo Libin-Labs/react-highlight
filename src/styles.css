@@ -1,0 +1,28 @@
+.lp-highlight {
+  --lp-highlight-color: #fff0a8;
+  --lp-highlight-active: #ffba68;
+  color: inherit;
+}
+.lp-highlight__text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.lp-highlight__match {
+  color: inherit;
+  background: var(--lp-highlight-color);
+  border-radius: 2px;
+}
+.lp-highlight__active {
+  background: var(--lp-highlight-active);
+  outline: 2px solid currentColor;
+}
+.lp-highlight__navigation {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.lp-highlight button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
